@@ -1,13 +1,32 @@
+let prime=1;
+let num=30;
+
 if(num==2){
-     prime=1
-  }
-else{
-     for(let i=2;i<num;i++){
-          if(num%i==0){
-                         prime=0;break;
-                      }
-           else{
-                  prime=1;
-               }
-                             }
+   console.log(true);
+} else{
+    if(num%2!==0){
+        for(let i=2;i<num;i++){
+            if(num%i==0){
+             
+            console.log(false);
+            break;
+        } else{
+            continue;
+        }
+    }
+
+}else{
+        prime=0
+        console.log(false);
+     }
+     
 }
+
+if(prime===1) {
+    console.log(true);
+}
+
+
+
+
+
