@@ -1,20 +1,14 @@
-let nTerm=6;
+let nTerm=4;
 let first=0 , second=1;
 
-if(nTerm==1){
-    console.log(first);
-}
-if(nTerm==2){
-    console.log(first);
-    console.log(second);
-}else{
-    console.log(first);
-    console.log(second);
-    for(let i=0;i<(nTerm-2);i++){
+if(nTerm>0){
+ 
+    for(let i=0;i<nTerm;i++){
+        console.log(first);
         let term=first+second;
         first=second;
         second=term;
-        console.log(term);
    }
 }
+
 
